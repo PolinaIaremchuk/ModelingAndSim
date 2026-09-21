@@ -1,5 +1,5 @@
 % Radioactive Chain of Three Elements
-% Chain: Bi210 -> Po210 -> Pb206
+% Chain: Ra226 → Rn222 → Po218
 % MTH/CSC 4170
 %% Clear workspace
 clear all;
