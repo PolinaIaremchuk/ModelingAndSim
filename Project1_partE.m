@@ -7,12 +7,12 @@ clear all;
 %% Initialize variables
 % Set up the time increment and vector (array) of x (time) values
 deltaX = 0.01;      % time step (days)
-tf = 100;           % final time (days)
+tf = 10;           % final time (days)
 x = 0:deltaX:tf;    % time vector (days)
 % Constants
-a1 = 0.20;   b1 = 0.10;     % decay rates, case 1 (1/day)
-a2 = 0.25;   b2 = 0.15;     % decay rates, case 2 (1/day)
-a3 = 0.30;   b3 = 0.20;     % decay rates, case 3 (1/day)
+a1 = 0.2;   b1 = 0.1;     % decay rates, case 1 (1/day)
+a2 = 0.6;   b2 = 0.3;     % decay rates, case 2 (1/day)
+a3 = 0.9;   b3 = 0.7;     % decay rates, case 3 (1/day)
 A0 = 1;                     % initial mass of substanceA (g)
 % Set up stock variables and initial conditions
 % B/A
@@ -39,7 +39,7 @@ xlabel('Time (days)', 'fontsize', 18);
 ylabel('B / A', 'fontsize', 18);
 
 % Add legend
-legend({' a = 0.2, b = 0.1', ' a = 0.25, b = 0.15', ' a = 0.3, b = 0.2'}, ...
+legend({' a = 0.2, b = 0.1', ' a = 0.6, b = 0.3', ' a = 0.9, b = 0.7'}, ...
     'fontsize', 18, 'location', 'northwest');
 
 % Add plot title
