@@ -29,6 +29,14 @@ for i = 2:length(x)
     A3(i) = A3(i-1) + (-a3*A3(i-1)) * deltaX;
     B3(i) = B3(i-1) + (a3*A3(i-1) - b3*B3(i-1)) * deltaX;
 end
+%% Table
+% Ratio B/A every 2.5 days
+for t = [2.5 5 7.5 10]
+    i = round(t/deltaX) + 1;
+    disp(['t = ', num2str(t), ' days:   case 1 B/A = ', num2str(B1(i)/A1(i)), ...
+        ',   case 2 B/A = ', num2str(B2(i)/A2(i)), ...
+        ',   case 3 B/A = ', num2str(B3(i)/A3(i))]);
+end
 %% Plot Solutions
 % Plot the ratios B/A over time
 figure()
