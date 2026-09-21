@@ -32,7 +32,7 @@ end
 figure()
 plot(x, A, 'k', 'LineWidth', 3.0);
 % Restrict y-axis
-ylim([0.99 1.001]);
+ylim([0.999 1.0002]);
 % Label both axes
 xlabel('Time (days)', 'fontsize', 18);
 ylabel('Mass of Ra-226 (g)', 'fontsize', 18);
